@@ -4,7 +4,6 @@ pollutantmean <- function(directory, pollutant, id = 1:332){
                                 nitrate=character(),
                                 id=integer())
     for (i in id){
-          readFileToDataFrame(createFileName(directory,i)) 
           masterData = rbind(masterData,readFileToDataFrame(createFileName(directory,i)))
           
     }
